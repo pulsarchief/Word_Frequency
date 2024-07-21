@@ -4,22 +4,40 @@
         <meta charset="UTF-8" />
         <meta
             name="viewport"
-            content="width=device-width, initial-scale=1.0" />
+            content="width=device-width, initial-scale=1.0"
+        />
         <title>Word Frequency</title>
         <link
             rel="stylesheet"
-            href="style.css" />
-        <script src="script.js"></script>
+            href="style.css"
+        />
+        <script
+            src="script.js"
+            defer
+        ></script>
     </head>
+
     <body>
+        <header>Word Frequency</header>
         <span id="input">
             <label for="text_input">INPUT TEXT</label>
-            <input
-                type="text"
+            <textarea
+                maxlength="2048"
                 name="text_input"
                 id="text_input"
                 autocomplete="off"
-                 />
+                placeholder="Please Enter Text (No more then 2048 Characters)"
+            >
+            </textarea>
+            <span id="display_numbers">
+                <p id="number">0</p>
+                <p>Characters</p>
+            </span>
         </span>
+        <span id="buttons">
+            <button id="reset">RESET</button>
+            <button id="analyze">ANALYZE</button>
+        </span>
+        <footer>Copyright © <a href="">PulsarChief</a></footer>
     </body>
 </html>
