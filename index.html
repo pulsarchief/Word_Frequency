@@ -19,25 +19,36 @@
 
     <body>
         <header>Word Frequency</header>
-        <span id="input">
-            <label for="text_input">INPUT TEXT</label>
-            <textarea
-                maxlength="2048"
-                name="text_input"
-                id="text_input"
-                autocomplete="off"
-                placeholder="Please Enter Text (No more then 2048 Characters)"
-            >
-            </textarea>
-            <span id="display_numbers">
-                <p id="number">0</p>
-                <p>Characters</p>
+        <div>
+            <span id="input">
+                <label for="text_input">INPUT TEXT</label>
+                <textarea
+                    maxlength="2048"
+                    name="text_input"
+                    id="text_input"
+                    autocomplete="off"
+                    placeholder="Please Enter Text (No more then 2048 Characters)"
+                >
+                </textarea>
+                <span id="display_numbers">
+                    <p id="number">0</p>
+                    <p>Characters</p>
+                </span>
             </span>
-        </span>
-        <span id="buttons">
-            <button id="reset">RESET</button>
-            <button id="analyze">ANALYZE</button>
-        </span>
+            <span id="buttons">
+                <button id="reset">RESET</button>
+                <button id="analyze">ANALYZE</button>
+            </span>
+        </div>
+        <!-- <table id="main_table">
+            <thead>
+                <tr>
+                    <th>S.no</th>
+                    <th>Word</th>
+                    <th>No of occurrence</th>
+                </tr>
+            </thead>
+        </table> -->
         <footer>Copyright © <a href="">PulsarChief</a></footer>
     </body>
 </html>
